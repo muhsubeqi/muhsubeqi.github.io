@@ -1658,24 +1658,24 @@ h = [
 q = [
   {
     "id": "puskopdit",
+    "category": { "id": "Koperasi & Portal Keuangan", "en": "Credit Union & Financial Portal" },
     "title": { "id": "PUSKOPDIT JATIM", "en": "PUSKOPDIT JATIM" },
     "company": "Pusat Koperasi Kredit Jawa Timur",
-    "image": "./assets/portfolio/6.png",
-    "stack": ["Laravel", "MySQL", "Financial Portal", "Admin Dashboard"]
+    "image": "./assets/portfolio/6.png"
   },
   {
     "id": "smartpower",
+    "category": { "id": "IoT & Telemetri Daya", "en": "Industrial IoT & Telemetry" },
     "title": { "id": "SMARTPOWER APDAL", "en": "SMARTPOWER APDAL" },
     "company": "PT Santinilestari Energi Indonesia",
-    "image": "./assets/portfolio/8.png",
-    "stack": ["IoT", "Laravel", "MySQL", "Maps API", "Live Telemetry"]
+    "image": "./assets/portfolio/8.png"
   },
   {
     "id": "pmb-dalwa",
+    "category": { "id": "Portal Akademik & Penerimaan", "en": "Academic Admission Portal" },
     "title": { "id": "PMB UII DALWA", "en": "PMB UII DALWA" },
     "company": "Universitas Islam Internasional Darullughah Wadda'wah",
-    "image": "./assets/portfolio/9.png",
-    "stack": ["Laravel", "Livewire", "MySQL", "Bootstrap", "PDF Generator"]
+    "image": "./assets/portfolio/9.png"
   }
 ],
 
@@ -2107,6 +2107,7 @@ function Pe({ lang: e }) {
             (0, C.jsxs)(`div`, {
               className: `project-body`,
               children: [
+                (0, C.jsx)(`span`, { className: `project-kicker`, children: t.category[e] }),
                 (0, C.jsx)(`h3`, { className: `project-title`, children: t.title[e] }),
                 (0, C.jsx)(`p`, { className: `project-company`, children: t.company })
               ]
