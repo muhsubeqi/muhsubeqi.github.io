@@ -221,8 +221,8 @@ Editlah file `index.html` ketika Anda ingin menyesuaikan:
    ```html
    <meta property="og:title" content="Muhammad Subeqi - Software Engineer" />
    <meta property="og:description" content="..." />
-   <meta property="og:url" content="https://msubeqidev.github.io/" />
-   <meta property="og:image" content="https://msubeqidev.github.io/og-image.png" />
+   <meta property="og:url" content="https://muhsubeqi.github.io/" />
+   <meta property="og:image" content="https://muhsubeqi.github.io/og-image.png" />
    ```
 4. **Data Terstruktur Schema.org (JSON-LD)**:
    Di baris ~50 terdapat `<script type="application/ld+json">` yang dibaca oleh mesin pencari Google untuk mengidentifikasi Anda sebagai entitas `Person`.
@@ -308,7 +308,7 @@ msubeqidev/
 ## 8. Tips Deployment
 
 Jika ingin mempublikasikan portofolio ini secara online (misalnya ke **GitHub Pages**):
-1. Buat repository baru di GitHub dengan nama `msubeqidev.github.io` (atau nama repository pilihan Anda).
+1. Buat repository baru di GitHub dengan nama `muhsubeqi.github.io` (atau nama repository pilihan Anda).
 2. Lakukan push commit:
    ```bash
    git add .
