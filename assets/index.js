@@ -2108,11 +2108,7 @@ function Pe({ lang: e }) {
               className: `project-body`,
               children: [
                 (0, C.jsx)(`h3`, { className: `project-title`, children: t.title[e] }),
-                (0, C.jsx)(`p`, { className: `project-company`, children: t.company }),
-                (0, C.jsx)(`div`, {
-                  className: `project-tags`,
-                  children: t.stack.map(s => (0, C.jsx)(`span`, { children: s }, s))
-                })
+                (0, C.jsx)(`p`, { className: `project-company`, children: t.company })
               ]
             })
           ]

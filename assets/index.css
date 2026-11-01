@@ -1655,7 +1655,7 @@ a {
 .project-company {
   font-size: .875rem;
   color: var(--muted);
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .project-desc {
