@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content" />
     <title>Portofolio Proyek — Muhammad Subeqi (msubeqidev)</title>
     <meta name="description"
-        content="Koleksi portofolio proyek pengembangan web, sistem enterprise, IoT, dan aplikasi mobile yang dikembangkan oleh Muhammad Subeqi (msubeqidev)." />
+        content="Koleksi portofolio proyek pengembangan web, sistem enterprise, IoT, dan platform digital yang dikembangkan oleh Muhammad Subeqi (msubeqidev)." />
     <meta name="author" content="Muhammad Subeqi" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://muhsubeqi.github.io/portfolio.html" />
@@ -16,7 +16,7 @@
     <meta property="og:site_name" content="Muhammad Subeqi" />
     <meta property="og:title" content="Portofolio Proyek — Muhammad Subeqi (msubeqidev)" />
     <meta property="og:description"
-        content="Koleksi proyek aplikasi web, sistem informasi enterprise, integrasi API, dan aplikasi Android." />
+        content="Koleksi 18 proyek aplikasi web, sistem enterprise, integrasi IoT, dan platform digital karya Muhammad Subeqi." />
     <meta property="og:url" content="https://muhsubeqi.github.io/portfolio.html" />
     <meta property="og:image" content="https://muhsubeqi.github.io/og-image.png" />
     <meta property="og:locale" content="id_ID" />
@@ -63,10 +63,10 @@
         <main>
             <!-- Hero Header -->
             <section class="section wrap" style="padding-top: clamp(40px, 8vw, 70px); padding-bottom: 20px;">
-                <p class="eyebrow"><span class="prompt">&gt;</span><span id="hero-tag">portfolio.all()</span></p>
+                <p class="eyebrow"><span class="prompt">&gt;</span><span id="hero-tag">portfolio.all(18)</span></p>
                 <h1 class="section-title" id="page-title" style="font-size: clamp(2.2rem, 5.5vw, 3.5rem); margin-top: 12px;">Koleksi Portofolio &amp; Proyek</h1>
                 <p id="page-subtitle" style="color: var(--muted); max-width: 680px; font-size: 1.15rem; line-height: 1.6; margin-top: 14px;">
-                    Daftar proyek aplikasi web produksi, sistem informasi enterprise, platform e-commerce, integrasi IoT, dan mobile yang pernah saya bangun dan kembangkan.
+                    Daftar 18 proyek aplikasi web produksi, sistem enterprise, IoT telemetry, portal akademik, dan landing page bisnis yang pernah saya bangun.
                 </p>
                 <div style="margin-top: 24px;">
                     <a class="btn btn-ghost" href="index.html" id="btn-back">&larr; Kembali ke Beranda</a>
@@ -74,176 +74,366 @@
 
                 <!-- Category Filters -->
                 <div class="portfolio-filters" role="tablist" aria-label="Filter Portofolio">
-                    <button class="filter-btn is-active" data-filter="all" onclick="filterProjects('all', this)">Semua Proyek (All)</button>
+                    <button class="filter-btn is-active" data-filter="all" onclick="filterProjects('all', this)">Semua (All 18)</button>
                     <button class="filter-btn" data-filter="enterprise" onclick="filterProjects('enterprise', this)">Web &amp; Enterprise</button>
                     <button class="filter-btn" data-filter="iot" onclick="filterProjects('iot', this)">IoT &amp; Hardware</button>
-                    <button class="filter-btn" data-filter="mobile" onclick="filterProjects('mobile', this)">Mobile &amp; Android</button>
+                    <button class="filter-btn" data-filter="education" onclick="filterProjects('education', this)">Pendidikan &amp; Kampus</button>
+                    <button class="filter-btn" data-filter="business" onclick="filterProjects('business', this)">Kreatif &amp; Bisnis</button>
                 </div>
             </section>
 
             <!-- Projects Grid -->
             <section class="section wrap" style="padding-top: 0;">
                 <div class="projects-grid" id="projects-container">
-
-                    <!-- Project 1: Sugarbaby Indonesia -->
-                    <div class="project-card" data-category="enterprise">
+                    <!-- Project 1: PT LWA (PT Lestari Wijaya Abadi) -->
+                    <div class="project-card reveal" data-category="enterprise" onclick="openLightbox(0)">
                         <div class="project-media">
-                            <img src="./assets/projects/sugarbaby.png" alt="Sugarbaby Indonesia Platform" loading="lazy">
+                            <img src="./assets/portfolio/1.png" alt="PT LWA (PT Lestari Wijaya Abadi)" loading="lazy">
                         </div>
                         <div class="project-body">
                             <div class="project-header-row">
-                                <span class="project-kicker">Brand E-Commerce &amp; Web Platform</span>
-                                <a href="https://sugarbaby.co.id" target="_blank" rel="noopener noreferrer" class="project-domain-badge">sugarbaby.co.id &UpperRightArrow;</a>
+                                <span class="project-kicker">Logistics & Freight Forwarding</span>
+                                <a href="https://lestariwijayaabadi.com" target="_blank" rel="noopener noreferrer" class="project-domain-badge" onclick="event.stopPropagation()">lestariwijayaabadi.com &UpperRightArrow;</a>
                             </div>
-                            <h3 class="project-title">Sugarbaby Indonesia Platform</h3>
-                            <p class="project-company">PT Kindalin Mandiri Utama · sugarbaby.co.id</p>
-                            <p class="project-desc">
-                                Platform web resmi brand perlengkapan bayi dan anak terkemuka Sugarbaby Indonesia berbasis Laravel dan Vite. Mengelola katalog produk interaktif, verifikasi keaslian barang, serta sistem promosi digital terpadu.
-                            </p>
+                            <h3 class="project-title">PT LWA (PT Lestari Wijaya Abadi)</h3>
+                            <p class="project-company">PT Lestari Wijaya Abadi</p>
+                            <p class="project-desc">The goal of becoming a trusted logistics partner in Indonesia and beyond. Website company profile logistik modern dan freight forwarding terintegrasi.</p>
+                            <div class="project-tags">
+                                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>Logistics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Sugarbaby Indonesia (CV Libby Baby) -->
+                    <div class="project-card reveal" data-category="enterprise" onclick="openLightbox(1)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/2.png" alt="Sugarbaby Indonesia (CV Libby Baby)" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Brand E-Commerce & Web Platform</span>
+                                <a href="https://sugarbaby.co.id" target="_blank" rel="noopener noreferrer" class="project-domain-badge" onclick="event.stopPropagation()">sugarbaby.co.id &UpperRightArrow;</a>
+                            </div>
+                            <h3 class="project-title">Sugarbaby Indonesia (CV Libby Baby)</h3>
+                            <p class="project-company">CV Libby Baby / CV Alpinika Unggul</p>
+                            <p class="project-desc">Merek pakaian dan perlengkapan bayi & anak asli dari Indonesia yang dijalankan oleh CV Alpinika Unggul. Platform web resmi untuk katalog produk, bantuan pelanggan, dan verifikasi produk.</p>
                             <div class="project-tags">
                                 <span>Laravel</span><span>Vite</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>REST API</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: E-Ticketing IT Helpdesk -->
-                    <div class="project-card" data-category="enterprise">
+                    <!-- Project 3: PT GIRINA (PT Girina Semesta Lestari) -->
+                    <div class="project-card reveal" data-category="business" onclick="openLightbox(2)">
                         <div class="project-media">
-                            <img src="./assets/projects/ticket-kindalin.png" alt="E-Ticketing IT Helpdesk System" loading="lazy">
+                            <img src="./assets/portfolio/3.png" alt="PT GIRINA (PT Girina Semesta Lestari)" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Heavy Equipment & Spare Parts</span>
+                            </div>
+                            <h3 class="project-title">PT GIRINA (PT Girina Semesta Lestari)</h3>
+                            <p class="project-company">PT Girina Semesta Lestari</p>
+                            <p class="project-desc">Company engaged in distribution of spare parts for heavy equipment and imported steel products. Katalog alat berat dan suku cadang impor berkualitas.</p>
+                            <div class="project-tags">
+                                <span>PHP</span><span>Web Profile</span><span>MySQL</span><span>Bootstrap</span><span>Heavy Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: PT BHASKARA (PT Bhaskara Wijaya Lestari) -->
+                    <div class="project-card reveal" data-category="business enterprise" onclick="openLightbox(3)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/4.png" alt="PT BHASKARA (PT Bhaskara Wijaya Lestari)" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Logistics & Fast Delivery</span>
+                            </div>
+                            <h3 class="project-title">PT BHASKARA (PT Bhaskara Wijaya Lestari)</h3>
+                            <p class="project-company">PT Bhaskara Wijaya Lestari</p>
+                            <p class="project-desc">Logistics company established in 2026 to provide fast, secure, and efficient delivery solutions that meet the demands of today's industrial era.</p>
+                            <div class="project-tags">
+                                <span>PHP</span><span>Web Design</span><span>MySQL</span><span>Logistics</span><span>Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: PT SEI (PT Santinilestari Energi Indonesia) -->
+                    <div class="project-card reveal" data-category="iot enterprise" onclick="openLightbox(4)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/5.png" alt="PT SEI (PT Santinilestari Energi Indonesia)" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Renewable Energy & Smart Manufacturing</span>
+                            </div>
+                            <h3 class="project-title">PT SEI (PT Santinilestari Energi Indonesia)</h3>
+                            <p class="project-company">PT Santinilestari Energi Indonesia</p>
+                            <p class="project-desc">Bergerak dalam industri manufaktur energi terbarukan di bidang Solar Charge Controller + LED Driver, Smart Communication Gateway, Solar Panel, Battery Pack, LPJU-TS, dan LPJU-AC.</p>
+                            <div class="project-tags">
+                                <span>Corporate Profile</span><span>Renewable Energy</span><span>IoT Gateway</span><span>Web Platform</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: PUSKOPDIT JATIM -->
+                    <div class="project-card reveal" data-category="enterprise" onclick="openLightbox(5)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/6.png" alt="PUSKOPDIT JATIM" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Credit Union & Financial Portal</span>
+                            </div>
+                            <h3 class="project-title">PUSKOPDIT JATIM</h3>
+                            <p class="project-company">Pusat Koperasi Kredit Jawa Timur</p>
+                            <p class="project-desc">Sistem koperasi kredit di Jawa Timur yang membantu mengelola administrasi, data anggota, serta berbagai aktivitas operasional secara lebih terintegrasi, efisien, dan terorganisir.</p>
+                            <div class="project-tags">
+                                <span>Laravel</span><span>MySQL</span><span>Financial Portal</span><span>Admin Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Smart Ticket PT Kindalin Utama -->
+                    <div class="project-card reveal" data-category="enterprise" onclick="openLightbox(6)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/7.png" alt="Smart Ticket PT Kindalin Utama" loading="lazy">
                         </div>
                         <div class="project-body">
                             <div class="project-header-row">
                                 <span class="project-kicker">Enterprise IT Service Management</span>
-                                <a href="https://ticket.kindalinutama.com" target="_blank" rel="noopener noreferrer" class="project-domain-badge">ticket.kindalinutama.com &UpperRightArrow;</a>
+                                <a href="https://ticket.kindalinutama.com" target="_blank" rel="noopener noreferrer" class="project-domain-badge" onclick="event.stopPropagation()">ticket.kindalinutama.com &UpperRightArrow;</a>
                             </div>
-                            <h3 class="project-title">E-Ticketing IT Helpdesk System</h3>
-                            <p class="project-company">PT Kindalin Mandiri Utama · ticket.kindalinutama.com</p>
-                            <p class="project-desc">
-                                Sistem helpdesk internal perusahaan untuk pencatatan tiket kendala, pemantauan SLA perbaikan IT, eskalasi prioritas insiden, dan penugasan teknisi antar-departemen secara terkoordinasi.
-                            </p>
+                            <h3 class="project-title">Smart Ticket PT Kindalin Utama</h3>
+                            <p class="project-company">PT Kindalin Utama Internasional</p>
+                            <p class="project-desc">Smart Ticket digunakan sebagai sistem terintegrasi untuk mengelola berbagai permintaan, laporan, dan kendala internal secara lebih mudah, cepat, dan terorganisir.</p>
                             <div class="project-tags">
                                 <span>Laravel</span><span>Livewire</span><span>MySQL</span><span>REST API</span><span>Jira Sync</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 3: Smart Visitor Management System -->
-                    <div class="project-card" data-category="enterprise iot">
+                    <!-- Project 8: SMARTPOWER (Monitoring APDAL) -->
+                    <div class="project-card reveal" data-category="iot" onclick="openLightbox(7)">
                         <div class="project-media">
-                            <img src="./assets/projects/visitor-kindalin.png" alt="Smart Visitor Management System" loading="lazy">
+                            <img src="./assets/portfolio/8.png" alt="SMARTPOWER (Monitoring APDAL)" loading="lazy">
                         </div>
                         <div class="project-body">
                             <div class="project-header-row">
-                                <span class="project-kicker">Digital Reception &amp; Access Log</span>
-                                <a href="https://visitor.kindalinutama.com" target="_blank" rel="noopener noreferrer" class="project-domain-badge">visitor.kindalinutama.com &UpperRightArrow;</a>
+                                <span class="project-kicker">Industrial IoT & Power Telemetry</span>
                             </div>
-                            <h3 class="project-title">Smart Visitor Management System</h3>
-                            <p class="project-company">PT Kindalin Mandiri Utama · visitor.kindalinutama.com</p>
-                            <p class="project-desc">
-                                Aplikasi buku tamu digital interaktif untuk registrasi pengunjung mandiri, check-in QR Code, pencatatan rekapitulasi data keamanan kantor, serta notifikasi instan staf yang dikunjungi.
-                            </p>
+                            <h3 class="project-title">SMARTPOWER (Monitoring APDAL)</h3>
+                            <p class="project-company">PT Santinilestari Energi Indonesia</p>
+                            <p class="project-desc">Aplikasi monitoring APDAL (Alat Penyalur Daya Listrik) yang menampilkan status distribusi listrik secara real-time dan menampilkan lokasi setiap alat berdasarkan koordinat latitude-longitude.</p>
                             <div class="project-tags">
-                                <span>Laravel</span><span>MySQL</span><span>QR Code</span><span>REST API</span><span>Hardware Sync</span>
+                                <span>IoT</span><span>Laravel</span><span>Maps API</span><span>Realtime Telemetry</span><span>MySQL</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 4: Smart Power & Lighting Monitoring -->
-                    <div class="project-card" data-category="iot enterprise">
+                    <!-- Project 9: PMB UII DALWA -->
+                    <div class="project-card reveal" data-category="education enterprise" onclick="openLightbox(8)">
                         <div class="project-media">
-                            <img src="./assets/projects/smart-power.png" alt="Smart Power &amp; Lighting Monitoring" loading="lazy">
-                        </div>
-                        <div class="project-body">
-                            <span class="project-kicker">IoT &amp; Energy Telemetry</span>
-                            <h3 class="project-title">Smart Power &amp; Lighting Monitoring</h3>
-                            <p class="project-company">PT Santinilestari Energi Indonesia · 2024 - Sekarang</p>
-                            <p class="project-desc">
-                                Sistem pemantauan telemetri daya baterai powerwall dan otomasi penerangan pintar industri secara real-time. Dilengkapi visualisasi analitik metrik tegangan, arus, suhu, serta notifikasi kendala otomatis.
-                            </p>
-                            <div class="project-tags">
-                                <span>Laravel</span><span>Livewire</span><span>Tailwind</span><span>MySQL</span><span>IoT</span><span>REST API</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: Kindalin Group Corporate Suite -->
-                    <div class="project-card" data-category="enterprise">
-                        <div class="project-media">
-                            <img src="./assets/projects/kindalin-corporate.png" alt="Kindalin Group Corporate Suite" loading="lazy">
+                            <img src="./assets/portfolio/9.png" alt="PMB UII DALWA" loading="lazy">
                         </div>
                         <div class="project-body">
                             <div class="project-header-row">
-                                <span class="project-kicker">Multi-Company Web Portals</span>
-                                <a href="https://kindalinutama.co.id" target="_blank" rel="noopener noreferrer" class="project-domain-badge">kindalinutama.co.id &UpperRightArrow;</a>
+                                <span class="project-kicker">Academic Admission Portal</span>
                             </div>
-                            <h3 class="project-title">Kindalin Group Corporate Suite</h3>
-                            <p class="project-company">PT Kindalin Mandiri Utama · kindalingroup.com</p>
-                            <p class="project-desc">
-                                Rangkaian situs portal resmi multi-perusahaan mencakup Kindalin Group, Kindalin Utama, dan Lestari Wijaya Abadi. Dibangun dengan fokus performa tinggi, keamanan server, dan optimasi SEO.
-                            </p>
-                            <div class="project-tags">
-                                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Tailwind</span><span>Apache/Nginx</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6: SIAKAD & Billing Dalwa -->
-                    <div class="project-card" data-category="enterprise">
-                        <div class="project-media">
-                            <img src="./assets/projects/siakad-dalwa.png" alt="SIAKAD &amp; Billing Keuangan Kampus" loading="lazy">
-                        </div>
-                        <div class="project-body">
-                            <span class="project-kicker">Academic &amp; Financial ERP</span>
-                            <h3 class="project-title">SIAKAD &amp; Billing Keuangan Kampus</h3>
-                            <p class="project-company">Institut Agama Islam Dalwa · 2022 - 2024</p>
-                            <p class="project-desc">
-                                Platform informasi akademik terpadu melayani ribuan mahasiswa &amp; dosen. Mengelola siklus perkuliahan (KRS, KHS, nilai, kurikulum), billing keuangan mahasiswa, integrasi pembayaran digital, dan cetak transkrip otomatis.
-                            </p>
-                            <div class="project-tags">
-                                <span>PHP</span><span>Laravel</span><span>Livewire</span><span>MySQL</span><span>Bootstrap</span><span>Payment</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 7: PSB Dalwa -->
-                    <div class="project-card" data-category="enterprise">
-                        <div class="project-media">
-                            <img src="./assets/projects/psb-online.png" alt="Portal PSB &amp; Registrasi Online" loading="lazy">
-                        </div>
-                        <div class="project-body">
-                            <span class="project-kicker">Admission &amp; Web Portal</span>
-                            <h3 class="project-title">Portal PSB &amp; Registrasi Mahasiswa Baru</h3>
-                            <p class="project-company">Institut Agama Islam Dalwa · 2023</p>
-                            <p class="project-desc">
-                                Portal pendaftaran calon santri dan mahasiswa baru online. Mendukung pengisian biodata, upload dan verifikasi berkas digital, seleksi ujian masuk, serta penerbitan bukti kelulusan otomatis berbasis PDF.
-                            </p>
+                            <h3 class="project-title">PMB UII DALWA</h3>
+                            <p class="project-company">Universitas Islam Internasional Darullughah Wadda'wah</p>
+                            <p class="project-desc">Aplikasi web untuk mengelola proses pendaftaran mahasiswa baru secara online, mulai dari pengisian data, verifikasi berkas, hingga laporan administrasi dan cetak kartu.</p>
                             <div class="project-tags">
                                 <span>Laravel</span><span>Livewire</span><span>MySQL</span><span>Bootstrap</span><span>PDF Generator</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 8: Kominfo Mobile -->
-                    <div class="project-card" data-category="mobile">
+                    <!-- Project 10: SMART PRESENCE (SIAP PT SEI) -->
+                    <div class="project-card reveal" data-category="enterprise iot" onclick="openLightbox(9)">
                         <div class="project-media">
-                            <img src="./assets/projects/kominfo-mobile.png" alt="Aplikasi Mobile Layanan Publik Kominfo" loading="lazy">
+                            <img src="./assets/portfolio/10.png" alt="SMART PRESENCE (SIAP PT SEI)" loading="lazy">
                         </div>
                         <div class="project-body">
-                            <span class="project-kicker">Public Service Mobile App</span>
-                            <h3 class="project-title">Aplikasi Mobile Layanan Publik Kominfo</h3>
-                            <p class="project-company">Dinas Komunikasi &amp; Informatika Kota Surabaya · 2020</p>
-                            <p class="project-desc">
-                                Aplikasi mobile frontend Android untuk memfasilitasi penyampaian informasi dan layanan publik pemerintahan bagi warga kota Surabaya, terhubung dengan RESTful API pemerintah kota.
-                            </p>
+                            <div class="project-header-row">
+                                <span class="project-kicker">HR Attendance & Fingerprint Sync</span>
+                            </div>
+                            <h3 class="project-title">SMART PRESENCE (SIAP PT SEI)</h3>
+                            <p class="project-company">PT Santinilestari Energi Indonesia</p>
+                            <p class="project-desc">Digunakan untuk mengelola absensi, kehadiran, izin, dan perjalanan dinas karyawan secara digital. Membantu proses administrasi menjadi lebih mudah, cepat, akurat, dan terintegrasi mesin fingerprint.</p>
                             <div class="project-tags">
-                                <span>Android</span><span>Java</span><span>REST API</span><span>JSON</span><span>UI/UX</span>
+                                <span>Laravel</span><span>MySQL</span><span>Hardware Sync</span><span>HR Dashboard</span><span>Fingerprint</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Project 11: SMART GUEST (Buku Tamu Digital) -->
+                    <div class="project-card reveal" data-category="enterprise iot" onclick="openLightbox(10)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/11.png" alt="SMART GUEST (Buku Tamu Digital)" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Digital Reception & Visitor Log</span>
+                                <a href="https://visitor.kindalinutama.com" target="_blank" rel="noopener noreferrer" class="project-domain-badge" onclick="event.stopPropagation()">visitor.kindalinutama.com &UpperRightArrow;</a>
+                            </div>
+                            <h3 class="project-title">SMART GUEST (Buku Tamu Digital)</h3>
+                            <p class="project-company">PT SEI / PT Kindalin Utama</p>
+                            <p class="project-desc">Sistem digital yang digunakan untuk mengelola buku tamu dan kunjungan secara mudah dan terorganisir. Membantu pencatatan, pemantauan, dan pengelolaan data tamu secara cepat, aman, dan terintegrasi QR code.</p>
+                            <div class="project-tags">
+                                <span>Laravel</span><span>MySQL</span><span>QR Code</span><span>REST API</span><span>Hardware Sync</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 12: TICKET PT SEI -->
+                    <div class="project-card reveal" data-category="enterprise" onclick="openLightbox(11)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/12.png" alt="TICKET PT SEI" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Internal IT Helpdesk</span>
+                            </div>
+                            <h3 class="project-title">TICKET PT SEI</h3>
+                            <p class="project-company">PT Santinilestari Energi Indonesia</p>
+                            <p class="project-desc">Sistem ticketing IT berbasis web yang membantu perusahaan mengelola permintaan dan keluhan IT karyawan secara efisien, transparan, dan terdokumentasi dengan baik.</p>
+                            <div class="project-tags">
+                                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Service Desk</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 13: E-LEARNING UII DALWA -->
+                    <div class="project-card reveal" data-category="education" onclick="openLightbox(12)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/13.png" alt="E-LEARNING UII DALWA" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Academic Learning Management System</span>
+                            </div>
+                            <h3 class="project-title">E-LEARNING UII DALWA</h3>
+                            <p class="project-company">Universitas Islam Internasional Darullughah Wadda'wah</p>
+                            <p class="project-desc">Platform e-learning berbasis web untuk mengelola materi perkuliahan, tugas, kuis, dan evaluasi pembelajaran secara online dan terstruktur.</p>
+                            <div class="project-tags">
+                                <span>Moodle / PHP</span><span>MySQL</span><span>LMS</span><span>Interactive Education</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 14: MUFDANA (Mandiri Utama Finance) -->
+                    <div class="project-card reveal" data-category="enterprise business" onclick="openLightbox(13)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/14.png" alt="MUFDANA (Mandiri Utama Finance)" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Financial Company Profile & Visitor Stats</span>
+                            </div>
+                            <h3 class="project-title">MUFDANA (Mandiri Utama Finance)</h3>
+                            <p class="project-company">MUFDANA Financial Partner</p>
+                            <p class="project-desc">Website company profile yang berfokus pada gadai BPKB mobil, motor dengan proses cepat, dan tanpa ribet. Dilengkapi admin dashboard dinamis untuk memantau trafik pengunjung website.</p>
+                            <div class="project-tags">
+                                <span>PHP</span><span>Admin Dashboard</span><span>FinTech</span><span>Visitor Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 15: ART PRODUCTION -->
+                    <div class="project-card reveal" data-category="business" onclick="openLightbox(14)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/15.png" alt="ART PRODUCTION" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Custom Apparel & Screen Printing</span>
+                            </div>
+                            <h3 class="project-title">ART PRODUCTION</h3>
+                            <p class="project-company">Art Production Studio</p>
+                            <p class="project-desc">Website penyedia layanan sablon kaos desain custom, cetak berkualitas, dan pengerjaan profesional cocok untuk komunitas, event, brand, perusahaan, hingga kebutuhan personal.</p>
+                            <div class="project-tags">
+                                <span>E-Commerce</span><span>PHP</span><span>Custom Orders</span><span>Product Catalog</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 16: ART SCREEN PRINTING -->
+                    <div class="project-card reveal" data-category="business" onclick="openLightbox(15)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/16.png" alt="ART SCREEN PRINTING" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Clothing Brand Apparel Production</span>
+                            </div>
+                            <h3 class="project-title">ART SCREEN PRINTING</h3>
+                            <p class="project-company">Art Production Partner</p>
+                            <p class="project-desc">Website landing page penyedia layanan screen printing presisi, sablon kaos, dan produksi apparel untuk clothing brand. Hasil rapi, awet, dan siap skala brand.</p>
+                            <div class="project-tags">
+                                <span>Landing Page</span><span>UI/UX</span><span>Clothing Brand</span><span>Modern Dark UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 17: PONPES AL FALAH KEJAYAN -->
+                    <div class="project-card reveal" data-category="education" onclick="openLightbox(16)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/17.png" alt="PONPES AL FALAH KEJAYAN" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Islamic Institution Portal</span>
+                            </div>
+                            <h3 class="project-title">PONPES AL FALAH KEJAYAN</h3>
+                            <p class="project-company">Pondok Pesantren Al-Falah Kejayan</p>
+                            <p class="project-desc">Website Pondok Pesantren Al-Falah menjadi media resmi untuk mengenalkan profil, program pendidikan, kegiatan, fasilitas, dan informasi pendaftaran santri baru.</p>
+                            <div class="project-tags">
+                                <span>Web Profile</span><span>Education</span><span>PHP/WordPress</span><span>CMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 18: GANONG STICKER -->
+                    <div class="project-card reveal" data-category="business" onclick="openLightbox(17)">
+                        <div class="project-media">
+                            <img src="./assets/portfolio/18.png" alt="GANONG STICKER" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <span class="project-kicker">Vehicle Decal & Branding Studio</span>
+                            </div>
+                            <h3 class="project-title">GANONG STICKER</h3>
+                            <p class="project-company">Ganong Sticker</p>
+                            <p class="project-desc">Website landing page Ganong Sticker untuk menampilkan layanan stiker motor & mobil, cutting sticker, portofolio hasil kerja, serta memudahkan pelanggan melakukan pemesanan.</p>
+                            <div class="project-tags">
+                                <span>Landing Page</span><span>Decal & Branding</span><span>Showcase Gallery</span><span>Orders</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox-backdrop" onclick="closeLightbox(event)">
+            <div class="lightbox-content" onclick="event.stopPropagation()">
+                <button type="button" class="lightbox-close" onclick="closeLightbox()" aria-label="Tutup">&times;</button>
+                <div class="lightbox-img-wrap">
+                    <img id="lb-img" src="" alt="Preview Proyek">
+                </div>
+                <div class="lightbox-body">
+                    <div class="project-header-row" style="margin-bottom: 4px;">
+                        <span id="lb-kicker" class="project-kicker"></span>
+                        <a id="lb-link" href="#" target="_blank" rel="noopener noreferrer" class="project-domain-badge" style="display:none;"></a>
+                    </div>
+                    <h3 id="lb-title"></h3>
+                    <p id="lb-desc"></p>
+                    <div id="lb-tags" class="project-tags"></div>
+                </div>
+            </div>
+        </div>
 
         <!-- Floating WhatsApp Button -->
         <a href="https://wa.me/628573561003" target="_blank" rel="noopener noreferrer" class="wa-float"
@@ -265,6 +455,363 @@
     </div>
 
     <script>
+        var projectsData = [
+  {
+    "num": 1,
+    "file": "1.png",
+    "title": "PT LWA (PT Lestari Wijaya Abadi)",
+    "category": "enterprise",
+    "kicker": "Logistics & Freight Forwarding",
+    "company": "PT Lestari Wijaya Abadi",
+    "domain": "lestariwijayaabadi.com",
+    "url": "https://lestariwijayaabadi.com",
+    "desc": "The goal of becoming a trusted logistics partner in Indonesia and beyond. Website company profile logistik modern dan freight forwarding terintegrasi.",
+    "tags": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+      "Logistics"
+    ]
+  },
+  {
+    "num": 2,
+    "file": "2.png",
+    "title": "Sugarbaby Indonesia (CV Libby Baby)",
+    "category": "enterprise",
+    "kicker": "Brand E-Commerce & Web Platform",
+    "company": "CV Libby Baby / CV Alpinika Unggul",
+    "domain": "sugarbaby.co.id",
+    "url": "https://sugarbaby.co.id",
+    "desc": "Merek pakaian dan perlengkapan bayi & anak asli dari Indonesia yang dijalankan oleh CV Alpinika Unggul. Platform web resmi untuk katalog produk, bantuan pelanggan, dan verifikasi produk.",
+    "tags": [
+      "Laravel",
+      "Vite",
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+      "REST API"
+    ]
+  },
+  {
+    "num": 3,
+    "file": "3.png",
+    "title": "PT GIRINA (PT Girina Semesta Lestari)",
+    "category": "business",
+    "kicker": "Heavy Equipment & Spare Parts",
+    "company": "PT Girina Semesta Lestari",
+    "domain": null,
+    "url": null,
+    "desc": "Company engaged in distribution of spare parts for heavy equipment and imported steel products. Katalog alat berat dan suku cadang impor berkualitas.",
+    "tags": [
+      "PHP",
+      "Web Profile",
+      "MySQL",
+      "Bootstrap",
+      "Heavy Equipment"
+    ]
+  },
+  {
+    "num": 4,
+    "file": "4.png",
+    "title": "PT BHASKARA (PT Bhaskara Wijaya Lestari)",
+    "category": "business enterprise",
+    "kicker": "Logistics & Fast Delivery",
+    "company": "PT Bhaskara Wijaya Lestari",
+    "domain": null,
+    "url": null,
+    "desc": "Logistics company established in 2026 to provide fast, secure, and efficient delivery solutions that meet the demands of today's industrial era.",
+    "tags": [
+      "PHP",
+      "Web Design",
+      "MySQL",
+      "Logistics",
+      "Responsive"
+    ]
+  },
+  {
+    "num": 5,
+    "file": "5.png",
+    "title": "PT SEI (PT Santinilestari Energi Indonesia)",
+    "category": "iot enterprise",
+    "kicker": "Renewable Energy & Smart Manufacturing",
+    "company": "PT Santinilestari Energi Indonesia",
+    "domain": null,
+    "url": null,
+    "desc": "Bergerak dalam industri manufaktur energi terbarukan di bidang Solar Charge Controller + LED Driver, Smart Communication Gateway, Solar Panel, Battery Pack, LPJU-TS, dan LPJU-AC.",
+    "tags": [
+      "Corporate Profile",
+      "Renewable Energy",
+      "IoT Gateway",
+      "Web Platform"
+    ]
+  },
+  {
+    "num": 6,
+    "file": "6.png",
+    "title": "PUSKOPDIT JATIM",
+    "category": "enterprise",
+    "kicker": "Credit Union & Financial Portal",
+    "company": "Pusat Koperasi Kredit Jawa Timur",
+    "domain": null,
+    "url": null,
+    "desc": "Sistem koperasi kredit di Jawa Timur yang membantu mengelola administrasi, data anggota, serta berbagai aktivitas operasional secara lebih terintegrasi, efisien, dan terorganisir.",
+    "tags": [
+      "Laravel",
+      "MySQL",
+      "Financial Portal",
+      "Admin Dashboard"
+    ]
+  },
+  {
+    "num": 7,
+    "file": "7.png",
+    "title": "Smart Ticket PT Kindalin Utama",
+    "category": "enterprise",
+    "kicker": "Enterprise IT Service Management",
+    "company": "PT Kindalin Utama Internasional",
+    "domain": "ticket.kindalinutama.com",
+    "url": "https://ticket.kindalinutama.com",
+    "desc": "Smart Ticket digunakan sebagai sistem terintegrasi untuk mengelola berbagai permintaan, laporan, dan kendala internal secara lebih mudah, cepat, dan terorganisir.",
+    "tags": [
+      "Laravel",
+      "Livewire",
+      "MySQL",
+      "REST API",
+      "Jira Sync"
+    ]
+  },
+  {
+    "num": 8,
+    "file": "8.png",
+    "title": "SMARTPOWER (Monitoring APDAL)",
+    "category": "iot",
+    "kicker": "Industrial IoT & Power Telemetry",
+    "company": "PT Santinilestari Energi Indonesia",
+    "domain": null,
+    "url": null,
+    "desc": "Aplikasi monitoring APDAL (Alat Penyalur Daya Listrik) yang menampilkan status distribusi listrik secara real-time dan menampilkan lokasi setiap alat berdasarkan koordinat latitude-longitude.",
+    "tags": [
+      "IoT",
+      "Laravel",
+      "Maps API",
+      "Realtime Telemetry",
+      "MySQL"
+    ]
+  },
+  {
+    "num": 9,
+    "file": "9.png",
+    "title": "PMB UII DALWA",
+    "category": "education enterprise",
+    "kicker": "Academic Admission Portal",
+    "company": "Universitas Islam Internasional Darullughah Wadda'wah",
+    "domain": null,
+    "url": null,
+    "desc": "Aplikasi web untuk mengelola proses pendaftaran mahasiswa baru secara online, mulai dari pengisian data, verifikasi berkas, hingga laporan administrasi dan cetak kartu.",
+    "tags": [
+      "Laravel",
+      "Livewire",
+      "MySQL",
+      "Bootstrap",
+      "PDF Generator"
+    ]
+  },
+  {
+    "num": 10,
+    "file": "10.png",
+    "title": "SMART PRESENCE (SIAP PT SEI)",
+    "category": "enterprise iot",
+    "kicker": "HR Attendance & Fingerprint Sync",
+    "company": "PT Santinilestari Energi Indonesia",
+    "domain": null,
+    "url": null,
+    "desc": "Digunakan untuk mengelola absensi, kehadiran, izin, dan perjalanan dinas karyawan secara digital. Membantu proses administrasi menjadi lebih mudah, cepat, akurat, dan terintegrasi mesin fingerprint.",
+    "tags": [
+      "Laravel",
+      "MySQL",
+      "Hardware Sync",
+      "HR Dashboard",
+      "Fingerprint"
+    ]
+  },
+  {
+    "num": 11,
+    "file": "11.png",
+    "title": "SMART GUEST (Buku Tamu Digital)",
+    "category": "enterprise iot",
+    "kicker": "Digital Reception & Visitor Log",
+    "company": "PT SEI / PT Kindalin Utama",
+    "domain": "visitor.kindalinutama.com",
+    "url": "https://visitor.kindalinutama.com",
+    "desc": "Sistem digital yang digunakan untuk mengelola buku tamu dan kunjungan secara mudah dan terorganisir. Membantu pencatatan, pemantauan, dan pengelolaan data tamu secara cepat, aman, dan terintegrasi QR code.",
+    "tags": [
+      "Laravel",
+      "MySQL",
+      "QR Code",
+      "REST API",
+      "Hardware Sync"
+    ]
+  },
+  {
+    "num": 12,
+    "file": "12.png",
+    "title": "TICKET PT SEI",
+    "category": "enterprise",
+    "kicker": "Internal IT Helpdesk",
+    "company": "PT Santinilestari Energi Indonesia",
+    "domain": null,
+    "url": null,
+    "desc": "Sistem ticketing IT berbasis web yang membantu perusahaan mengelola permintaan dan keluhan IT karyawan secara efisien, transparan, dan terdokumentasi dengan baik.",
+    "tags": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Service Desk",
+      "Bootstrap"
+    ]
+  },
+  {
+    "num": 13,
+    "file": "13.png",
+    "title": "E-LEARNING UII DALWA",
+    "category": "education",
+    "kicker": "Academic Learning Management System",
+    "company": "Universitas Islam Internasional Darullughah Wadda'wah",
+    "domain": null,
+    "url": null,
+    "desc": "Platform e-learning berbasis web untuk mengelola materi perkuliahan, tugas, kuis, dan evaluasi pembelajaran secara online dan terstruktur.",
+    "tags": [
+      "Moodle / PHP",
+      "MySQL",
+      "LMS",
+      "Interactive Education"
+    ]
+  },
+  {
+    "num": 14,
+    "file": "14.png",
+    "title": "MUFDANA (Mandiri Utama Finance)",
+    "category": "enterprise business",
+    "kicker": "Financial Company Profile & Visitor Stats",
+    "company": "MUFDANA Financial Partner",
+    "domain": null,
+    "url": null,
+    "desc": "Website company profile yang berfokus pada gadai BPKB mobil, motor dengan proses cepat, dan tanpa ribet. Dilengkapi admin dashboard dinamis untuk memantau trafik pengunjung website.",
+    "tags": [
+      "PHP",
+      "Admin Dashboard",
+      "FinTech",
+      "Visitor Analytics"
+    ]
+  },
+  {
+    "num": 15,
+    "file": "15.png",
+    "title": "ART PRODUCTION",
+    "category": "business",
+    "kicker": "Custom Apparel & Screen Printing",
+    "company": "Art Production Studio",
+    "domain": null,
+    "url": null,
+    "desc": "Website penyedia layanan sablon kaos desain custom, cetak berkualitas, dan pengerjaan profesional cocok untuk komunitas, event, brand, perusahaan, hingga kebutuhan personal.",
+    "tags": [
+      "E-Commerce",
+      "PHP",
+      "Custom Orders",
+      "Product Catalog"
+    ]
+  },
+  {
+    "num": 16,
+    "file": "16.png",
+    "title": "ART SCREEN PRINTING",
+    "category": "business",
+    "kicker": "Clothing Brand Apparel Production",
+    "company": "Art Production Partner",
+    "domain": null,
+    "url": null,
+    "desc": "Website landing page penyedia layanan screen printing presisi, sablon kaos, dan produksi apparel untuk clothing brand. Hasil rapi, awet, dan siap skala brand.",
+    "tags": [
+      "Landing Page",
+      "UI/UX",
+      "Clothing Brand",
+      "Modern Dark UI"
+    ]
+  },
+  {
+    "num": 17,
+    "file": "17.png",
+    "title": "PONPES AL FALAH KEJAYAN",
+    "category": "education",
+    "kicker": "Islamic Institution Portal",
+    "company": "Pondok Pesantren Al-Falah Kejayan",
+    "domain": null,
+    "url": null,
+    "desc": "Website Pondok Pesantren Al-Falah menjadi media resmi untuk mengenalkan profil, program pendidikan, kegiatan, fasilitas, dan informasi pendaftaran santri baru.",
+    "tags": [
+      "Web Profile",
+      "Education",
+      "PHP/WordPress",
+      "CMS"
+    ]
+  },
+  {
+    "num": 18,
+    "file": "18.png",
+    "title": "GANONG STICKER",
+    "category": "business",
+    "kicker": "Vehicle Decal & Branding Studio",
+    "company": "Ganong Sticker",
+    "domain": null,
+    "url": null,
+    "desc": "Website landing page Ganong Sticker untuk menampilkan layanan stiker motor & mobil, cutting sticker, portofolio hasil kerja, serta memudahkan pelanggan melakukan pemesanan.",
+    "tags": [
+      "Landing Page",
+      "Decal & Branding",
+      "Showcase Gallery",
+      "Orders"
+    ]
+  }
+];
+
+        // Lightbox Functions
+        function openLightbox(idx) {
+            var p = projectsData[idx];
+            if (!p) return;
+            document.getElementById('lb-img').src = './assets/portfolio/' + p.file;
+            document.getElementById('lb-img').alt = p.title;
+            document.getElementById('lb-kicker').textContent = p.kicker;
+            document.getElementById('lb-title').textContent = p.title;
+            document.getElementById('lb-desc').textContent = p.desc;
+
+            var linkEl = document.getElementById('lb-link');
+            if (p.domain && p.url) {
+                linkEl.href = p.url;
+                linkEl.textContent = p.domain + ' ↗';
+                linkEl.style.display = 'inline-flex';
+            } else {
+                linkEl.style.display = 'none';
+            }
+
+            var tagsEl = document.getElementById('lb-tags');
+            tagsEl.innerHTML = p.tags.map(function(t) {
+                return '<span>' + t + '</span>';
+            }).join('');
+
+            document.getElementById('lightbox').classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
         // Theme initialization
         (function() {
             var savedTheme = localStorage.getItem('theme');
@@ -307,15 +854,15 @@
         var i18n = {
             id: {
                 pageTitle: 'Koleksi Portofolio & Proyek',
-                pageSubtitle: 'Daftar proyek aplikasi web produksi, sistem informasi enterprise, platform e-commerce, integrasi IoT, dan mobile yang pernah saya bangun dan kembangkan.',
+                pageSubtitle: 'Daftar 18 proyek aplikasi web produksi, sistem enterprise, IoT telemetry, portal akademik, dan landing page bisnis yang pernah saya bangun.',
                 btnBack: '← Kembali ke Beranda',
-                heroTag: 'portfolio.all()'
+                heroTag: 'portfolio.all(18)'
             },
             en: {
                 pageTitle: 'Project Portfolio Collection',
-                pageSubtitle: 'Showcase of live production web applications, enterprise ERP, e-commerce platforms, IoT integrations, and mobile solutions I have built.',
+                pageSubtitle: 'Showcase of 18 live web applications, enterprise systems, IoT telemetry, academic portals, and business landing pages I have built.',
                 btnBack: '← Back to Home',
-                heroTag: 'portfolio.all()'
+                heroTag: 'portfolio.all(18)'
             }
         };
 

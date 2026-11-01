@@ -1660,43 +1660,43 @@ q = [
     "id": "sugarbaby",
     "category": { "id": "Brand E-Commerce & Web Platform", "en": "Brand E-Commerce & Web Platform" },
     "title": { "id": "Sugarbaby Indonesia Platform", "en": "Sugarbaby Indonesia Platform" },
-    "company": "PT Kindalin Mandiri Utama · sugarbaby.co.id",
+    "company": "CV Libby Baby / CV Alpinika Unggul",
     "url": "https://sugarbaby.co.id",
     "domain": "sugarbaby.co.id",
     "desc": {
-      "id": "Platform web resmi brand perlengkapan bayi Sugarbaby Indonesia berbasis Laravel dan Vite untuk katalog produk interaktif, verifikasi produk, dan manajemen promosi.",
-      "en": "Official web platform for baby product brand Sugarbaby Indonesia powered by Laravel and Vite, managing product catalog, product verification, and digital campaigns."
+      "id": "Platform web resmi brand perlengkapan bayi Sugarbaby Indonesia berbasis Laravel dan Vite untuk katalog produk, dukungan pelanggan, dan verifikasi produk.",
+      "en": "Official web platform for baby & kids product brand Sugarbaby Indonesia powered by Laravel & Vite for product catalog and verification."
     },
-    "image": "./assets/projects/sugarbaby.png",
+    "image": "./assets/portfolio/2.png",
     "stack": ["Laravel", "Vite", "PHP", "MySQL", "Bootstrap", "REST API"]
   },
   {
-    "id": "ticket-kindalin",
+    "id": "smart-ticket",
     "category": { "id": "Enterprise IT Service Management", "en": "Enterprise IT Service Management" },
-    "title": { "id": "E-Ticketing IT Helpdesk System", "en": "E-Ticketing IT Helpdesk System" },
-    "company": "PT Kindalin Mandiri Utama · ticket.kindalinutama.com",
+    "title": { "id": "Smart Ticket PT Kindalin", "en": "Smart Ticket PT Kindalin" },
+    "company": "PT Kindalin Utama Internasional",
     "url": "https://ticket.kindalinutama.com",
     "domain": "ticket.kindalinutama.com",
     "desc": {
-      "id": "Sistem helpdesk internal perusahaan untuk pencatatan tiket kendala, pemantauan status perbaikan IT, SLA escalation, dan penugasan teknisi antar-departemen.",
-      "en": "Corporate IT helpdesk system for ticket logging, issue resolution monitoring, SLA escalation, and multi-department task delegation."
+      "id": "Sistem ticketing terintegrasi untuk mengelola permintaan, laporan kendala IT, pemantauan SLA, dan penanganan teknisi antar-departemen secara terkoordinasi.",
+      "en": "Integrated ticketing system for IT support requests, incident reporting, SLA monitoring, and inter-departmental technician dispatch."
     },
-    "image": "./assets/projects/ticket-kindalin.png",
+    "image": "./assets/portfolio/7.png",
     "stack": ["Laravel", "Livewire", "MySQL", "REST API", "Jira Sync"]
   },
   {
-    "id": "visitor-kindalin",
-    "category": { "id": "Digital Reception & Access Log", "en": "Digital Reception & Access Log" },
-    "title": { "id": "Smart Visitor Management System", "en": "Smart Visitor Management System" },
-    "company": "PT Kindalin Mandiri Utama · visitor.kindalinutama.com",
-    "url": "https://visitor.kindalinutama.com",
-    "domain": "visitor.kindalinutama.com",
+    "id": "smartpower",
+    "category": { "id": "Industrial IoT & Telemetry", "en": "Industrial IoT & Telemetry" },
+    "title": { "id": "SMARTPOWER APDAL", en: "SMARTPOWER APDAL" },
+    "company": "PT Santinilestari Energi Indonesia",
+    "url": null,
+    "domain": null,
     "desc": {
-      "id": "Aplikasi buku tamu digital interaktif untuk registrasi pengunjung mandiri, check-in QR Code, rekapitulasi data keamanan kantor, dan notifikasi staf otomatis.",
-      "en": "Interactive digital visitor management application for self-check-in via QR code, corporate security logs, and automatic host staff notifications."
+      "id": "Aplikasi monitoring APDAL (Alat Penyalur Daya Listrik) menampilkan status distribusi daya listrik real-time dan titik koordinat alat pada peta.",
+      "en": "Real-time electrical distribution telemetry and APDAL hardware monitoring with live coordinates on interactive maps."
     },
-    "image": "./assets/projects/visitor-kindalin.png",
-    "stack": ["Laravel", "MySQL", "QR Code", "REST API", "Hardware Sync"]
+    "image": "./assets/portfolio/8.png",
+    "stack": ["IoT", "Laravel", "MySQL", "Maps API", "Live Telemetry"]
   }
 ],
 
