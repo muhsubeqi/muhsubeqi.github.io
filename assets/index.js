@@ -1657,46 +1657,25 @@ h = [
 // =============================================================================
 q = [
   {
-    "id": "sugarbaby",
-    "category": { "id": "Brand E-Commerce & Web Platform", "en": "Brand E-Commerce & Web Platform" },
-    "title": { "id": "Sugarbaby Indonesia Platform", "en": "Sugarbaby Indonesia Platform" },
-    "company": "CV Libby Baby / CV Alpinika Unggul",
-    "url": "https://sugarbaby.co.id",
-    "domain": "sugarbaby.co.id",
-    "desc": {
-      "id": "Platform web resmi brand perlengkapan bayi Sugarbaby Indonesia berbasis Laravel dan Vite untuk katalog produk, dukungan pelanggan, dan verifikasi produk.",
-      "en": "Official web platform for baby & kids product brand Sugarbaby Indonesia powered by Laravel & Vite for product catalog and verification."
-    },
-    "image": "./assets/portfolio/2.png",
-    "stack": ["Laravel", "Vite", "PHP", "MySQL", "Bootstrap", "REST API"]
-  },
-  {
-    "id": "smart-ticket",
-    "category": { "id": "Enterprise IT Service Management", "en": "Enterprise IT Service Management" },
-    "title": { "id": "Smart Ticket PT Kindalin", "en": "Smart Ticket PT Kindalin" },
-    "company": "PT Kindalin Utama Internasional",
-    "url": "https://ticket.kindalinutama.com",
-    "domain": "ticket.kindalinutama.com",
-    "desc": {
-      "id": "Sistem ticketing terintegrasi untuk mengelola permintaan, laporan kendala IT, pemantauan SLA, dan penanganan teknisi antar-departemen secara terkoordinasi.",
-      "en": "Integrated ticketing system for IT support requests, incident reporting, SLA monitoring, and inter-departmental technician dispatch."
-    },
-    "image": "./assets/portfolio/7.png",
-    "stack": ["Laravel", "Livewire", "MySQL", "REST API", "Jira Sync"]
+    "id": "puskopdit",
+    "title": { "id": "PUSKOPDIT JATIM", "en": "PUSKOPDIT JATIM" },
+    "company": "Pusat Koperasi Kredit Jawa Timur",
+    "image": "./assets/portfolio/6.png",
+    "stack": ["Laravel", "MySQL", "Financial Portal", "Admin Dashboard"]
   },
   {
     "id": "smartpower",
-    "category": { "id": "Industrial IoT & Telemetry", "en": "Industrial IoT & Telemetry" },
-    "title": { "id": "SMARTPOWER APDAL", en: "SMARTPOWER APDAL" },
+    "title": { "id": "SMARTPOWER APDAL", "en": "SMARTPOWER APDAL" },
     "company": "PT Santinilestari Energi Indonesia",
-    "url": null,
-    "domain": null,
-    "desc": {
-      "id": "Aplikasi monitoring APDAL (Alat Penyalur Daya Listrik) menampilkan status distribusi daya listrik real-time dan titik koordinat alat pada peta.",
-      "en": "Real-time electrical distribution telemetry and APDAL hardware monitoring with live coordinates on interactive maps."
-    },
     "image": "./assets/portfolio/8.png",
     "stack": ["IoT", "Laravel", "MySQL", "Maps API", "Live Telemetry"]
+  },
+  {
+    "id": "pmb-dalwa",
+    "title": { "id": "PMB UII DALWA", "en": "PMB UII DALWA" },
+    "company": "Universitas Islam Internasional Darullughah Wadda'wah",
+    "image": "./assets/portfolio/9.png",
+    "stack": ["Laravel", "Livewire", "MySQL", "Bootstrap", "PDF Generator"]
   }
 ],
 
@@ -2128,22 +2107,8 @@ function Pe({ lang: e }) {
             (0, C.jsxs)(`div`, {
               className: `project-body`,
               children: [
-                (0, C.jsxs)(`div`, {
-                  className: `project-header-row`,
-                  children: [
-                    (0, C.jsx)(`span`, { className: `project-kicker`, children: t.category[e] }),
-                    t.domain ? (0, C.jsxs)(`a`, {
-                      href: t.url,
-                      target: `_blank`,
-                      rel: `noopener noreferrer`,
-                      className: `project-domain-badge`,
-                      children: [t.domain, ` ↗`]
-                    }) : null
-                  ]
-                }),
                 (0, C.jsx)(`h3`, { className: `project-title`, children: t.title[e] }),
                 (0, C.jsx)(`p`, { className: `project-company`, children: t.company }),
-                (0, C.jsx)(`p`, { className: `project-desc`, children: t.desc[e] }),
                 (0, C.jsx)(`div`, {
                   className: `project-tags`,
                   children: t.stack.map(s => (0, C.jsx)(`span`, { children: s }, s))
